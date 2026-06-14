@@ -56,7 +56,7 @@ public class EncurtadorUrlBean implements Serializable {
                             "URL encurtada com sucesso!"
                     )
             );
-        } catch (AliasAlreadyExistsException e) {
+        } catch (Exception e) {
             FacesContext.getCurrentInstance().addMessage(
                     null,
                     new FacesMessage(
