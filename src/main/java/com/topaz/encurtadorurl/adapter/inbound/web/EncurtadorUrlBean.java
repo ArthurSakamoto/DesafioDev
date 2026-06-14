@@ -2,7 +2,6 @@ package com.topaz.encurtadorurl.adapter.inbound.web;
 
 import com.topaz.encurtadorurl.core.domain.EncurtadorUrlDomain;
 import com.topaz.encurtadorurl.core.ports.incoming.EncurtadorUrlUseCasePort;
-import com.topaz.encurtadorurl.exception.AliasAlreadyExistsException;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;

@@ -3,6 +3,8 @@ package com.topaz.encurtadorurl.usecase;
 import com.topaz.encurtadorurl.core.domain.EncurtadorUrlDomain;
 import com.topaz.encurtadorurl.core.ports.incoming.EncurtadorUrlUseCasePort;
 import com.topaz.encurtadorurl.core.ports.outgoing.UrlRepositoryPort;
+import com.topaz.encurtadorurl.exception.AliasAlreadyExistsException;
+import com.topaz.encurtadorurl.exception.AliasNotFoundException;
 
 import java.util.UUID;
 
@@ -19,7 +21,7 @@ public class EncurtadorUrlUseCase implements EncurtadorUrlUseCasePort {
         if (domain.getAlias() != null && !domain.getAlias().trim().isEmpty()) {
             String cleanAlias = domain.getAlias().trim();
             if (repository.findByAlias(cleanAlias).isPresent()){
-                throw new IllegalArgumentException("O alias " + cleanAlias + " já está em uso!");
+                throw new AliasAlreadyExistsException();
             }
             return repository.save(new EncurtadorUrlDomain(domain.getOriginalUrl(), cleanAlias));
         }
@@ -36,6 +38,7 @@ public class EncurtadorUrlUseCase implements EncurtadorUrlUseCasePort {
     public String getOriginalUrl(String alias) {
         return repository.findByAlias(alias)
                 .map(EncurtadorUrlDomain::getOriginalUrl)
-                .orElseThrow(() -> new IllegalArgumentException("URL encurtada inválida!"));
+                .orElseThrow(AliasNotFoundException::new);
+
     }
 }
