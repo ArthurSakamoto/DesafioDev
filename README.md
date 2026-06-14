@@ -59,7 +59,7 @@ mvn clean install
 Copiar o arquivo:
 
 ```
-target/shortener.war
+target/encurtador.war
 ```
 
 para:
