@@ -6,9 +6,9 @@
              version="2.1">
     <persistence-unit name="shortenerPU" transaction-type="JTA">
         <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
-        <class>com.shortener.adapters.outbound.persistence.UrlEntity</class>
+        <class>com.topaz.encurtadorurl.adapter.outbound.persistence.UrlEntity</class>
         <properties>
-            <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.format_sql" value="true" />
