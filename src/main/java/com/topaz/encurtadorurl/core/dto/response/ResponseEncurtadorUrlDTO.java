@@ -8,6 +8,9 @@ public class ResponseEncurtadorUrlDTO implements Serializable {
     private String alias;
     private String urlEncurtada;
 
+    public ResponseEncurtadorUrlDTO() {
+    }
+
     public ResponseEncurtadorUrlDTO(String originalUrl, String alias, String urlEncurtada) {
         this.originalUrl = originalUrl;
         this.alias = alias;
