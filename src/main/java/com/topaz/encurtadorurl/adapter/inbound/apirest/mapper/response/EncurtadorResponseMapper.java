@@ -1,7 +1,7 @@
-package com.topaz.encurtadorurl.core.mapper.response;
+package com.topaz.encurtadorurl.adapter.inbound.apirest.mapper.response;
 
 import com.topaz.encurtadorurl.core.domain.EncurtadorUrlDomain;
-import com.topaz.encurtadorurl.core.dto.response.ResponseEncurtadorUrlDTO;
+import com.topaz.encurtadorurl.adapter.inbound.apirest.dto.response.ResponseEncurtadorUrlDTO;
 
 public class EncurtadorResponseMapper {
 

@@ -1,4 +1,4 @@
-package com.topaz.encurtadorurl.core.dto.response;
+package com.topaz.encurtadorurl.adapter.inbound.apirest.dto.response;
 
 import java.io.Serializable;
 

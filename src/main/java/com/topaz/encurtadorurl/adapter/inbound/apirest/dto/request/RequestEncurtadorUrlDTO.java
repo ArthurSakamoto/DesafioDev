@@ -1,4 +1,4 @@
-package com.topaz.encurtadorurl.core.dto.request;
+package com.topaz.encurtadorurl.adapter.inbound.apirest.dto.request;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
