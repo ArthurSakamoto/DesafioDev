@@ -82,37 +82,6 @@ http://localhost:8080/encurtador/
 
 ---
 
-## 🔥 API REST
-
-### Criar URL encurtada
-
-POST
-
-```
-/api/encurtador
-```
-
-Exemplo:
-
-```json
-{
-  "url": "https://www.google.com",
-  "alias": "google"
-}
-```
-
-Resposta:
-
-```json
-{
-  "originalUrl": "https://www.google.com",
-  "alias": "google",
-  "urlEncurtada": "http://localhost:8080/encurtador/api/google"
-}
-```
-
----
-
 ## 🧪 Testes
 
 O projeto possui testes unitários para:
