@@ -9,7 +9,7 @@ public class EncurtadorResponseMapper {
 
     }
 
-    public static ResponseEncurtadorUrlDTO toResponse(
+    public static ResponseEncurtadorUrlDTO mapeadorResponse(
             EncurtadorUrlDomain domain,
             String urlEncurtada) {
 
