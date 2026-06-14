@@ -11,20 +11,20 @@ public class UrlEntity {
     private Long id;
 
     @Column(nullable = false, length = 1000)
-    private String orginalUrl;
+    private String originalUrl;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true, length = 50)
     private String alias;
 
     public UrlEntity() {
     }
 
-    public String getOrginalUrl() {
-        return orginalUrl;
+    public String getOriginalUrl() {
+        return originalUrl;
     }
 
-    public void setOrginalUrl(String orginalUrl) {
-        this.orginalUrl = orginalUrl;
+    public void setOriginalUrl(String originalUrl) {
+        this.originalUrl = originalUrl;
     }
 
     public String getAlias() {
