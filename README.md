@@ -155,7 +155,7 @@ Algumas coisas que faria com mais tempo seria:
 - Desenvolver mais o Front-end
 - Aumentar a cobertura dos meus testes unitários
 
---
+---
 
 ## 👨‍💻 Autor
 
