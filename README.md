@@ -107,7 +107,7 @@ Resposta:
 {
   "originalUrl": "https://www.google.com",
   "alias": "google",
-  "urlEncurtada": "http://localhost:8080/shortener/api/google"
+  "urlEncurtada": "http://localhost:8080/encurtador/api/google"
 }
 ```
 
