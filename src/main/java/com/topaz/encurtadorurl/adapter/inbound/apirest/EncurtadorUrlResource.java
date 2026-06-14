@@ -8,7 +8,6 @@ import com.topaz.encurtadorurl.core.domain.EncurtadorUrlDomain;
 import com.topaz.encurtadorurl.core.ports.incoming.EncurtadorUrlUseCasePort;
 import com.topaz.encurtadorurl.exception.AliasAlreadyExistsException;
 import com.topaz.encurtadorurl.exception.AliasNotFoundException;
-import com.topaz.encurtadorurl.usecase.EncurtadorUrlUseCase;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
