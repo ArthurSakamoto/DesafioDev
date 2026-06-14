@@ -1,7 +1,14 @@
 package com.topaz.encurtadorurl.core.dto.request;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class RequestEncurtadorUrlDTO {
+
+    @NotNull
     private String url;
+
+    @Size(max = 50)
     private String alias;
 
     public RequestEncurtadorUrlDTO() {
